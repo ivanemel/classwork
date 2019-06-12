@@ -1,0 +1,181 @@
+.catalog{
+	display: grid;
+	background-color: white;
+	grid-template-columns: auto 2fr 2fr 2fr 2fr auto;
+	grid-template-rows: auto;
+	grid-auto-rows: 40px;
+	grid-template-areas:
+			" . . hd1 hd2 hd3 ." 
+			". item1 item2 item3 item4 ."
+			". item5 item6 item7 item8 ."
+			". item9 item10 item11 item12 ."
+			". item13 item14 item15 item16 ."
+			". item17 item18 item19 item20 ."
+			". item21 item22 item23 item24 ."
+			". item25 item26 item27 item28 .";
+
+	width: 60%;
+	padding: 5%;
+	margin: 10% auto;
+	background-color: rgb(200 200 200);
+}
+.head1{
+	grid-area: hd1;
+}
+
+.head2{
+	grid-area: hd2;
+}
+
+.head3{
+	grid-area: hd3;
+}
+.item1{
+	grid-area: item1;
+	
+}
+
+.item2{
+	grid-area: item2;
+}
+
+.item3{
+	grid-area: item3;
+}
+
+.item4{
+	grid-area: item4;
+}
+
+.item5{
+	grid-area: item5;
+}
+
+.item6{
+	grid-area: item6;
+}
+
+.item7{
+	grid-area: item7;
+}
+
+.item8{
+	grid-area: item8;
+}
+
+.item9{
+	grid-area: item9;
+}
+
+.item10{
+	grid-area: item10;
+}
+
+.item11{
+	grid-area: item11;
+}
+
+.item12{
+	grid-area: item12;
+}
+
+.item13{
+	grid-area: item13;
+}
+
+.item14{
+	grid-area: item14;
+}
+
+.item15{
+	grid-area: item15;
+}
+
+.item16{
+	grid-area: item16;
+}
+
+.item17{
+	grid-area: item17;
+}
+
+.item18{
+	grid-area: item18;
+}
+
+.item19{
+	grid-area: item19;
+}
+
+.item20{
+	grid-area: item20;
+}
+
+.item21{
+	grid-area: item21;
+}
+
+.item22{
+	grid-area: item22;
+}
+
+.item23{
+	grid-area: item23;
+}
+
+.item24{
+	grid-area: item24;
+}
+
+.item25{
+	grid-area: item25;
+}
+
+.item26{
+	grid-area: item26;
+}
+
+.item27{
+	grid-area: item27;
+}
+
+.item28{
+	grid-area: item28;
+}
+
+img{
+	max-height: 100px;
+	max-width: 100px;
+}
+
+body {
+	background-color: rgb(200 200 200);
+}
+
+.left-panel{
+	border-top: black 1px solid;
+
+}
+
+.right-panel{
+	border-top: black 1px solid;
+	text-align: center;
+}
+
+.head1, .head3, .right-panel{
+	background-color: white;
+} 
+
+.head2, .item3, .item7, .item11,  .item15,  .item19,  .item23, .item27{
+	background-color: aqua;
+}
+
+.head1, .head3{
+	margin-top: 10px;
+}
+
+.item26, .item28{
+	margin-bottom: 10px;
+}
+
+,
