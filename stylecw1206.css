@@ -203,19 +203,19 @@ body {
 	grid-auto-rows: 40px;
 	grid-template-areas:
 			" hd1 hd2 hd3 " 
-			" item1 . ."
+			" item1 hd2 ."
 			" item2 item3 item4 "
-			" item5 . ."
+			" item5 item3 ."
 			" item6 item7 item8 "
-			" item9 . . "
+			" item9 item7 . "
 			" item10 item11 item12 "
-			" item13 . . "
+			" item13 item11 . "
 			" item14 item15 item16 "
-			" item17 . . "
+			" item17 item15 . "
 			" item18 item19 item20 "
-			" item21 . . "
+			" item21 item19 . "
 			" item22 item23 item24 "
-			" item25 . . "
+			" item25 item23 . "
 			" item26 item27 item28 ";
 
 	width: 100%;
@@ -239,6 +239,7 @@ body {
 
 	.head2, .item3, .item7, .item11,  .item15,  .item19,  .item23, .item27{
 		background-color: white;
+
 	}
 
 	.head1, .head3{
@@ -256,5 +257,9 @@ body {
 
 	.item26, .item27, .item28{
 		font-size: 1.5em;
+	}
+
+	.head2{
+		color: black;
 	}
 }
