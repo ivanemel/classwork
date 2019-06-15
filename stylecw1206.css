@@ -18,17 +18,22 @@
 	padding: 5%;
 	margin: 10% auto;
 	background-color: rgb(200 200 200);
+
 }
+
 .head1{
 	grid-area: hd1;
+	font-weight: bold;
 }
 
 .head2{
 	grid-area: hd2;
+	font-weight: bold;
 }
 
 .head3{
 	grid-area: hd3;
+	font-weight: bold;
 }
 .item1{
 	grid-area: item1;
@@ -146,6 +151,7 @@
 img{
 	max-height: 100px;
 	max-width: 100px;
+	margin: 1px auto;
 }
 
 body {
@@ -153,13 +159,14 @@ body {
 }
 
 .left-panel{
-	border-top: black 1px solid;
-
+	border-top: grey 1px solid;
+	font-weight: bold;
 }
 
 .right-panel{
-	border-top: black 1px solid;
+	border-top: grey 1px solid;
 	text-align: center;
+	color: grey;
 }
 
 .head1, .head3, .right-panel{
@@ -167,7 +174,9 @@ body {
 } 
 
 .head2, .item3, .item7, .item11,  .item15,  .item19,  .item23, .item27{
-	background-color: aqua;
+	background-color: rgb(0 0 180);
+	color: white;
+	
 }
 
 .head1, .head3{
@@ -178,4 +187,74 @@ body {
 	margin-bottom: 10px;
 }
 
-,
+.head p{
+	text-align: center;
+}
+
+.item26, .item27, .item28{
+	font-size: 1.5em;
+}
+
+@media (max-width: 789px){
+	.catalog{
+	display: grid;
+	grid-template-columns:  2fr 2fr 2fr;
+	grid-template-rows: auto;
+	grid-auto-rows: 40px;
+	grid-template-areas:
+			" hd1 hd2 hd3 " 
+			" item1 . ."
+			" item2 item3 item4 "
+			" item5 . ."
+			" item6 item7 item8 "
+			" item9 . . "
+			" item10 item11 item12 "
+			" item13 . . "
+			" item14 item15 item16 "
+			" item17 . . "
+			" item18 item19 item20 "
+			" item21 . . "
+			" item22 item23 item24 "
+			" item25 . . "
+			" item26 item27 item28 ";
+
+	width: 100%;
+	background-color: rgb(200 200 200);
+	}
+
+	.left-panel{
+	border:none;
+	font-weight: bold;
+	}
+
+	.right-panel{
+		border-top: black 1px solid;
+		text-align: left;
+		color: grey;
+	}
+
+	.head1, .head3, .right-panel{
+		background-color:rgb(200 200 200);
+	} 
+
+	.head2, .item3, .item7, .item11,  .item15,  .item19,  .item23, .item27{
+		background-color: white;
+	}
+
+	.head1, .head3{
+		margin-top: 10px;
+	}
+
+	.item26, .item28{
+		margin-bottom: 10px;
+	}
+
+	.head p{
+		text-align: left;
+		
+	}
+
+	.item26, .item27, .item28{
+		font-size: 1.5em;
+	}
+}
