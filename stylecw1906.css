@@ -1,0 +1,51 @@
+.container{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+
+}
+
+.header, .footer{
+
+	background-color: pink;
+	flex-grow: 1;
+}
+
+.center{
+	display: flex;
+	flex-direction: row;
+	flex-grow: 10;
+}
+
+.sidebar{
+	background-color: red;
+	flex-grow: 1;
+}
+
+.main{
+	flex-grow: 6;
+	flex
+}
+
+@media( max-width: 798px){
+	.center{
+	display: flex;
+	flex-direction: column;
+	flex-grow: 10;
+	}
+
+	.sidebar{
+		background-color: red;
+		flex-grow: 1;
+	}
+
+	.main{
+		flex-grow: 6;
+		order: -1;
+	}
+
+	.footer{
+		align-self: flex-end;
+	}
+
+}
