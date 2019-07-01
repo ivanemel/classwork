@@ -9,4 +9,33 @@ main{
 nav ul li svg{
 	max-width: 80px;
 	max-height: 30px;
+	fill: #fff;
+}
+
+nav ul{
+	list-style-type: none;
+	padding-left: 0px;
+}
+
+nav ul li span{
+	position: relative;
+	top: -10px;
+	color: #fff;
+
+	
+}
+
+nav{
+	background-color: rgb(255,0,100);
+	padding: 10px 0px;
+}
+
+a{
+	text-decoration: none;
+
+}
+
+li{
+	margin: 10px 0px 20px;
+
 }
