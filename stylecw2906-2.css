@@ -1,15 +1,32 @@
-main{
+body{
+	margin: 0px;
+}
+
+.container{
 	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	display: flex;
+}
+
+main{
+	height: 100%;
 	width: 100%;
+	min-height: 100vh;
+	min-width: 100vw;
 	background-image: url(https://picsum.photos/id/368/1920/1080);
 	background-size: cover;
 	background-position: center;
+	transition: transform 0.3s linear;
 }
 
 nav ul li svg{
 	max-width: 80px;
 	max-height: 30px;
 	fill: #fff;
+	position: relative;
+	top: 10px;
+	z-index: 1;
 }
 
 nav ul{
@@ -17,25 +34,64 @@ nav ul{
 	padding-left: 0px;
 }
 
-nav ul li span{
-	position: relative;
-	top: -10px;
-	color: #fff;
+nav ul li{
+	height: 50px;
+	max-height: 50px;
+	width: 100%;
+}
 
-	
+nav ul li span{
+	color: #fff;
+	position: relative;
+	left: -10px;
+	transition: left 0.3s linear, opacity 0.3s linear;
+	opacity: 0;
 }
 
 nav{
 	background-color: rgb(255,0,100);
 	padding: 10px 0px;
+	width: 80px;
+	float: left;
+	height: 100vh;
+	transition: all 0.3s linear;
 }
 
 a{
 	text-decoration: none;
-
 }
 
-li{
-	margin: 10px 0px 20px;
+nav:hover{
+	width: 300px;
+}
 
+
+
+.span2{
+	transition-delay: 0.1s; 
+}
+
+.span3{
+	transition-delay: 0.2s; 
+}
+
+.span4{
+	transition-delay: 0.3s; 
+}
+
+li:hover svg{
+	fill: rgb(255,0,100);
+}
+
+li:hover{
+	background-color: rgb(50,50,50); 
+}
+
+li:hover span{
+	color: rgb(255,0,100);
+}
+
+nav:hover ul li span{
+	left: 10px;
+	opacity: 1;
 }
