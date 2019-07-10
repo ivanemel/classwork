@@ -1,0 +1,73 @@
+body{
+	margin: 0px;
+}
+
+main{
+	height: 100%;
+	width: 100%;
+	background-image: url(https://picsum.photos/id/368/1920/1080);
+	padding-left: 140px;
+	margin-top: 0px;
+	background-size: cover;
+	background-position: center center;
+}
+
+nav ul li svg{
+	width: 80px;
+	height: 30px;
+	position: relative;
+}
+
+header{
+	position: fixed;
+	width: 50px;
+	background-color: #ED1C58;
+	height: 100%;
+	bottom: 0;
+transition: width 400ms;
+}
+
+nav ul{
+	margin: 30px 0 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav a span{
+	position: relative;
+	display: block;
+	white-space: nowrap;
+	text-indent: -20em;
+	transition: text-indent 400ms linear;
+}
+nav a{
+	display: flex;
+
+	align-items: center;
+	text-decoration: none;
+	color: #fefefe;
+	width: 80%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	fill:#fefefe;
+}
+
+nav li:hover{
+	background-color: #1a1a1a;
+}
+
+nav li:hover svg{
+	fill:#ED1C58;
+}
+
+nav li:hover span{
+	color: #ED1C58;
+}
+
+nav:hover{
+	transform: translateX(250px);
+}
+
+header:hover nav span{
+	text-indent: 0;
+}

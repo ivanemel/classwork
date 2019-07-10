@@ -21,11 +21,11 @@ main{
 }
 
 nav ul li svg{
-	max-width: 80px;
-	max-height: 30px;
+	width: 80px;
+	height: 30px;
 	fill: #fff;
-	position: relative;
-	top: 10px;
+	
+	background-color: rgb(255,0,100); 
 	z-index: 1;
 }
 
@@ -38,14 +38,22 @@ nav ul li{
 	height: 50px;
 	max-height: 50px;
 	width: 100%;
+	display: block;
+	align-items: center;
 }
 
 nav ul li span{
+	
 	color: #fff;
 	position: relative;
-	left: -10px;
-	transition: left 0.3s linear, opacity 0.3s linear;
-	opacity: 0;
+	
+	transition: left 0.3s linear;
+	
+	display: block;
+	white-space: nowrap;
+	text-indent: -20em;
+	transition: text-indent 400ms linear;
+
 }
 
 nav{
@@ -94,4 +102,8 @@ li:hover span{
 nav:hover ul li span{
 	left: 10px;
 	opacity: 1;
+}
+
+header:hover nav span{
+	text-indent: 0;
 }
