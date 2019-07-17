@@ -1,0 +1,24 @@
+.accordion{
+	width: 80%;
+	margin: 0 auto;
+	max-width: 30em;
+}
+.accordion button{
+	width: 100%;
+	padding: 1em .5em;
+	background: #f5f5f5;
+	border: solid 1px #ccc;
+	cursor: pointer;
+}
+
+.accordion button:first-child{
+	border-bottom: solid 1px #ccc;
+}
+
+.accordion div{
+	border: 1px solid #ccc;
+	border-top: 0;
+	height: 0px;
+	overflow: hidden;
+	transition: all 0.2s linear;
+}
